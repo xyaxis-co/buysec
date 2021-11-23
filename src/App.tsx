@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.css';
+import Header from './ui/Header';
 
 const  App: React.FC = () => {
   return (
-    <div className="App">
+    <div className="bg-gray-300 h-screen">
       <header className="App-header">
-        <h1 className="animate-bounce text-red-700">Under Construction !!</h1>
+        <Header />
       </header>
     </div>
   );
