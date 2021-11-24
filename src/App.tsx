@@ -1,12 +1,10 @@
 import React from 'react';
 import Header from './ui/Header';
 
-const  App: React.FC = () => {
+const  App: React.FC<any> = () => {
   return (
-    <div className="bg-gray-300 h-screen">
-      <header className="App-header">
-        <Header />
-      </header>
+    <div className="h-screen">
+      <Header />
     </div>
   );
 }
