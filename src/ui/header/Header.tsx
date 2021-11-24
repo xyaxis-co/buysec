@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
-import Logo from '../assets/svgs/Logo.svg';
+import Logo from '../../assets/svgs/Logo.svg';
 
 interface Handler {
     (): void
 }
 
 const Header: React.FC<any> = () => {
-    const [search, setSearch] = useState<string>('invisible');
+    const [search, setSearch] = useState<boolean>(false);
     const onSearchHandler: Handler = (): void => {
-        setSearch('visible');
+        setSearch(true);
     }
     return (
         <>
@@ -22,7 +22,7 @@ const Header: React.FC<any> = () => {
                     <p className="cursor-pointer">Categories</p>
                 </div>
                 <div className="mx-3.5 w-2/6 text-primary">
-                    <input type="text" placeholder="Search" autoFocus id="signin" className={`${search} w-full border-4 rounded-3xl border-tertiary px-3 py-1.5`}/>
+                    <input type="text" placeholder="Search" autoFocus id="signin" className={`${search ? 'visible': 'invisible'} w-full border-4 rounded-3xl border-tertiary px-3 py-1.5`}/>
                 </div>
                 <div className="mx-10 w-2/6 flex flex-row items-center justify-evenly">
                     <div className="text-primary mx-1.5" onClick={onSearchHandler}>
