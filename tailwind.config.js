@@ -10,7 +10,9 @@ module.exports = {
       secondary_light: '#D0A6C7',
       tertiary: '#4F8996',
       tertiary_light: '#BDD7DC',
-      gray: 'gray',
+      google: '#4285F4',
+      github: '#333333',
+      facebook: '#4267B2',
       white: '#FFFFFF',
     },
     fontFamily: {

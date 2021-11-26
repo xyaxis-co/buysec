@@ -25,22 +25,22 @@ const Header: React.FC<any> = () => {
                     <input type="text" placeholder="Search" autoFocus id="signin" className={`${search ? 'visible': 'invisible'} w-full border-4 rounded-3xl border-tertiary px-3 py-1.5`}/>
                 </div>
                 <div className="mx-10 w-2/6 flex flex-row items-center justify-evenly">
-                    <div className="text-primary mx-1.5" onClick={onSearchHandler}>
+                    <div className="hidden text-primary mx-1.5" onClick={onSearchHandler}>
                         <button><i className="fas fa-search"></i></button>
                     </div>
-                    <div className="mx-2 hidden border-4 rounded-3xl border-tertiary text-primary px-4 hover:bg-tertiary hover:text-white">
+                    <div className="mx-2 border-4 rounded-3xl border-tertiary text-primary px-4 hover:bg-tertiary hover:text-white">
                         <a href="/signin">Sign In</a>
                     </div>
-                    <div className="mx-2 border-4 rounded-3xl border-tertiary text-primary hover:text-white px-4 hover:bg-tertiary" >
+                    <div className="hidden mx-2 border-4 rounded-3xl border-tertiary text-primary hover:text-white px-4 hover:bg-tertiary" >
                         <a href="/sell">Sell</a>
                     </div>
-                    <div className="mx-2 text-primary">
+                    <div className="hidden mx-2 text-primary">
                         <a href="/chats"><i className="fas fa-comment"></i></a>
                     </div>
-                    <div className="mx-2 text-primary">
+                    <div className="hidden mx-2 text-primary">
                         <button><i className="fas fa-bell"></i></button>
                     </div>
-                    <div className="mx-2 text-primary">
+                    <div className="hidden mx-2 text-primary">
                         <a href="/person"><i className="fas fa-user-alt"></i></a>
                     </div>
                 </div>
