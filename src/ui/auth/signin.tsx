@@ -12,7 +12,7 @@ const Signin: React.FC<any>= () => {
 
     return (
         <>
-            <div className="h-5/6 w-screen flex items-center justify-center">
+            <div className="my-10 w-screen flex items-center justify-center">
                 <div className="flex flex-col items-center justify-around rounded-3xl p-20 shadow-2xl">
                 <div>
                     <img src={Logo} alt="Logo" width="200" height="100"/>
