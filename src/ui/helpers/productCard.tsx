@@ -3,10 +3,10 @@ import Image from '../../extras/assests/product_img_test.png';
 
 const productCard : React.FC<any>= () => {
     return (
-        <div className='w-72 h-fit rounded-3xl mx-5 my-5 shadow-2xl'>
+        <div className='cursor-pointer w-72 h-fit rounded-3xl mx-5 my-5 shadow-2xl'>
             <div>
                 <div className='flex flex-row-reverse text-primary-light'>
-                    <span className="far fa-heart text-3xl m-4 absolute"></span>
+                    <span className="far fa-heart text-primary_light text-3xl m-4 absolute cursor-pointer"></span>
                 </div>
                 <img src={Image} alt="" className='rounded-t-3xl' />
             </div>
