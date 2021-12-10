@@ -4,6 +4,8 @@ import Topbar from './ui/filters/topbar';
 import Signin from './ui/auth/signin';
 import Loading from './ui/extras/loading';
 import Address from './ui/pages/address';
+import ProductCard from './ui/helpers/productCard';
+import Carasoul from './ui/components/carasoul';
 
 const  App: React.FC<any> = () => {
   return (
@@ -13,6 +15,8 @@ const  App: React.FC<any> = () => {
       <Topbar />
       {/* <Signin /> */}
       {/* <Loading /> */}
+      {/* <ProductCard /> */}
+      <Carasoul />
     </div>
   );
 }
