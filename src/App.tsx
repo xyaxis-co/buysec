@@ -4,6 +4,7 @@ import Header from './ui/header/header';
 import Topbar from './ui/filters/topbar';
 import Signin from './ui/auth/signin';
 import Carasoul from './ui/components/carasoul';
+import Product from './ui/pages/product/product';
 
 const  App: React.FC<any> = () => {
   return (
@@ -13,12 +14,17 @@ const  App: React.FC<any> = () => {
         <Route path="/" element={
           <>
             <Topbar />
-            <Carasoul />
+            <Carasoul page="homepage" width="1500" height="475" />
           </>
         } />
         <Route path="/signin" element={
           <>
             <Signin />
+          </>
+        } />
+        <Route path="/product" element={
+          <>
+            <Product />
           </>
         } />
       </Routes>
